@@ -1,0 +1,49 @@
+DONASI:
+Bantu saya mengembangkan dan membuat lebih banyak source code
+untuk Anda dengan cara donasi. 
+Anda dapat mengirimkan donasi ke:
+
+No. Rekening : 5485-01-007458-53-6
+Bank	     : Bank BRI
+A/n	     : M Fikri Setiadi
+
+PS: Berapapun donasi yang Anda kirimkan akan 
+    sangat membantu saya untuk mengembangkan dan 
+    membuat lebih banyak source code untuk Anda.
+
+INSTALLASI LOCALHOST:
+
+#1. EXTRACT mblog.zip ke direktori:
+    C:\wamp\www (jika menggunakan WampServer)
+    atau:
+    C:\xampp\htdocs (jika menggunakan XAMPP)
+
+#2. Buat database dengan nama "blog_db" pada MySQL.
+    Anda dapat menggunakan phpmyadmin untuk membuat database.
+
+#3. Import "blog_db.sql" yang terdapat pada "mblog.zip" menggunakan phpmyadmin.
+
+#4. Cek konfigurasi pada file "config.php" yang terdapat pada folder:
+    "mblog/application/config", kemudian buka file config.php
+    menggunakan text editor seperti nodepad++.
+    kemudian temukan kode berikut:
+    $config['base_url'] = 'http://localhost/mblog/';
+    
+    jika webserver anda tidak menggunakan PORT,
+    biarkan saja settingannya seperti itu, tetapi jika
+    web server anda menggunakan port, maka sertakan juga port web server anda.
+    contoh:
+    $config['base_url'] = 'http://localhost:8080/mblog/';
+    
+    Note: 8080 sesuaikan dengan port webserver anda. 
+
+#5. Buka browser Anda kemudian kunjungi URL berikut:
+    http://localhost/mblog/
+
+#6. Untuk masuk ke halaman admin kunjung URL berikut:
+    http://localhost/mblog/administrator
+
+    Username: fikrifiver97@gmail.com
+    Password: 123456
+
+#7. Enjoy.
